@@ -1,0 +1,76 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      '@relate/relate':
+        specifier: ^1.0.1
+        version: 1.0.1
+
+packages:
+
+  '@relate/relate-darwin-arm64@1.0.1':
+    resolution: {integrity: sha512-q21J7yHlcrcaVheOfK+X+uafFIVzr9DXRHefWEET5q993/KJvtTasPnj/uuT9L+XANnkFPW+a00Zxa9J/jILSg==}
+    cpu: [arm64]
+    os: [darwin]
+
+  '@relate/relate-darwin-x64@1.0.1':
+    resolution: {integrity: sha512-RPoYvfnj27/sY++hgqHKKvquls8fDyAxy+tfS96AAcIbJhL1lzKyDJTuYkI2JJqr8qbpEiNaDtBSa9kuzgQCDw==}
+    cpu: [x64]
+    os: [darwin]
+
+  '@relate/relate-linux-arm64@1.0.1':
+    resolution: {integrity: sha512-lbwDWxZAfW43LNFsTqZktCntvq/QzQBQ65umDtbIK8BUtM1qwHEmx0Zy7yAi334blC7SgS5ZgC2WzFxZHpSX/Q==}
+    cpu: [arm64]
+    os: [linux]
+
+  '@relate/relate-linux-x64@1.0.1':
+    resolution: {integrity: sha512-Umn3wazbJ9lCVuiuKzJpcu0tPP5T3r9/ALA8ox/xOGBVb2UVIpeMjfIVCpRLNMnjDy8kiDsgsJ8WipE2l1bnuA==}
+    cpu: [x64]
+    os: [linux]
+
+  '@relate/relate-win32-x64@1.0.1':
+    resolution: {integrity: sha512-yAdMpNUFxfGF2SeiaT7HIWejP9SFKWRsRHbNojBDOkkV6/71+37vaGewSvxkKmWcbwwNu8oymxjlpExA9ooUUg==}
+    cpu: [x64]
+    os: [win32]
+
+  '@relate/relate@1.0.1':
+    resolution: {integrity: sha512-hOsH79BxtXIdFvKK9o1AioW4mkDmWegkKuBb/DltRVssIUQBrvGToyML83z3aBXEZyYYlixKRHSQoQbQsVQauA==}
+    engines: {node: '>=18'}
+
+  koffi@2.16.3:
+    resolution: {integrity: sha512-E9y1AsgYGlaxMhcZzHr8y96QF2U5XzA12GGVAfbWqIubTwPNMXQarfBzePNXHe0xtIEtNd6ifAv3GAKYGUeBAQ==}
+
+snapshots:
+
+  '@relate/relate-darwin-arm64@1.0.1':
+    optional: true
+
+  '@relate/relate-darwin-x64@1.0.1':
+    optional: true
+
+  '@relate/relate-linux-arm64@1.0.1':
+    optional: true
+
+  '@relate/relate-linux-x64@1.0.1':
+    optional: true
+
+  '@relate/relate-win32-x64@1.0.1':
+    optional: true
+
+  '@relate/relate@1.0.1':
+    dependencies:
+      koffi: 2.16.3
+    optionalDependencies:
+      '@relate/relate-darwin-arm64': 1.0.1
+      '@relate/relate-darwin-x64': 1.0.1
+      '@relate/relate-linux-arm64': 1.0.1
+      '@relate/relate-linux-x64': 1.0.1
+      '@relate/relate-win32-x64': 1.0.1
+
+  koffi@2.16.3: {}
